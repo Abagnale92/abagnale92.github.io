@@ -2911,4 +2911,38 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
+			.game-card {
+				width: 300px; /* o qualsiasi altra dimensione che preferisci */
+				height: 400px; /* o qualsiasi altra dimensione che preferisci */
+				display: inline-block;
+				vertical-align: top;
+				margin: 10px;
+				padding: 10px;
+				box-sizing: border-box;
+				text-align: left;
+			  }
+
+			  .game-card .image {
+				display: block;
+				height: 200px; /* o qualsiasi altra dimensione che preferisci */
+				margin-bottom: 10px;
+			  }
+
+			  .game-card h3 {
+				font-size: 20px; /* o qualsiasi altro formato che preferisci */
+				margin: 0;
+				padding: 0;
+				line-height: 1.2;
+			  }
+
+			  .game-card p {
+				font-size: 14px; /* o qualsiasi altro formato che preferisci */
+				margin: 0;
+				padding: 0;
+				line-height: 1.2;
+				height: 100px; /* o qualsiasi altra dimensione che preferisci */
+				overflow: hidden;
+			  }			  
+			  
+
 	}
