@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
 </head>
 
 <body class="homepage is-preload">
@@ -36,7 +37,7 @@
 			<section id="banner">
 				<header>
 					<h2>Giuseppe Abagnale</h2>
-					<p>Game Designer & Game Developer</p>
+					<p><span id="typing-text"></span><span class="typing-cursor"></span></p>
 				</header>
 			</section>
 
@@ -52,34 +53,38 @@
 				</header>
 				<footer>
 					<h2>Skills</h2>
-					<div class="row" style="padding-top: 20px;">
-						<div class="col-sm ftco-animate">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg"
-								alt="alternative" width="150" height="150">
+					<div class="skills-grid">
+						<div class="skill-item reveal">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" alt="Unity" width="80" height="80">
+							<span>Unity</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg"
-								alt="alternative" width="150" height="150">
+						<div class="skill-item reveal">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" alt="Unreal Engine" width="80" height="80">
+							<span>Unreal</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-								alt="alternative" width="100" height="100">
+						<div class="skill-item reveal">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="64" height="64">
+							<span>C#</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-								alt="alternative" width="100" height="100">
+						<div class="skill-item reveal">
+							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="64" height="64">
+							<span>C++</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="images/IconGit.png" alt="alternative" width="100" height="100">
+						<div class="skill-item reveal">
+							<img src="images/IconGit.png" alt="Git" width="64" height="64">
+							<span>Git</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="images/IconPS.png" alt="alternative" width="90" height="90">
+						<div class="skill-item reveal">
+							<img src="images/IconPS.png" alt="Photoshop" width="64" height="64">
+							<span>Photoshop</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="images/IconFigma.png" alt="alternative" width="90" height="90">
+						<div class="skill-item reveal">
+							<img src="images/IconFigma.png" alt="Figma" width="64" height="64">
+							<span>Figma</span>
 						</div>
-						<div class="col-sm ftco-animate">
-							<img src="images/iconVS.png" alt="alternative" width="100" height="100">
+						<div class="skill-item reveal">
+							<img src="images/iconVS.png" alt="Visual Studio" width="64" height="64">
+							<span>Visual Studio</span>
 						</div>
 					</div>
 				</footer>
@@ -99,179 +104,156 @@
 								<h2>My Games</h2>
 							</header>
 							<div class="row">
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="https://store.steampowered.com/app/2184850/Darwake_Awakening_from_the_Nightmare/" class="image featured"><img src="images/pic02.jpg" alt="Darwake" /></a>
 										<header>
 											<h3>Darwake: Awakening from the Nightmare</h3>
 										</header>
-										<p>A 2D puzzle platformer set in a dark and disturbing world. The hero Darwin,
-											accompanied by a mysterious owl, will have to find a way out nightmares.</p>
+										<p>A 2D puzzle platformer set in a dark and disturbing world. The hero Darwin, accompanied by a mysterious owl, will have to find a way out of nightmares.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://store.steampowered.com/app/2184850/Darwake_Awakening_from_the_Nightmare/"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://store.steampowered.com/app/2184850/Darwake_Awakening_from_the_Nightmare/" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic10.PNG" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/bubble-western-duel" class="image featured"><img src="images/pic10.PNG" alt="Bubble Western Duel" /></a>
 										<header>
 											<h3>Bubble Western Duel</h3>
 										</header>
-										<p>It's a local multiplayer duel where two bubble-headed cowboys face off in the Wild West. Who will be the fastest gunslinger?"</p>
+										<p>A local multiplayer duel where two bubble-headed cowboys face off in the Wild West. Who will be the fastest gunslinger?</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/bubble-western-duel"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/bubble-western-duel" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic11.PNG" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/me-stann-carenn-tutt-e-bubbles" class="image featured"><img src="images/pic11.PNG" alt="Me stann carenn tutt e Bubbles" /></a>
 										<header>
 											<h3>Me stann carenn tutt e Bubbles!</h3>
 										</header>
-										<p>A penguin on a soap bar must avoid falling off the ice sheet it's standing on. Help it by preventing bubbles from hitting the ice, so it doesn’t become even more slippery.</p>
+										<p>A penguin on a soap bar must avoid falling off the ice sheet. Help it by preventing bubbles from hitting the ice, so it doesn’t become even more slippery.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/me-stann-carenn-tutt-e-bubbles"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/me-stann-carenn-tutt-e-bubbles" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic12.png" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/babbo-furioso" class="image featured"><img src="images/pic12.png" alt="Babbo Furioso" /></a>
 										<header>
 											<h3>Babbo Furioso</h3>
 										</header>
 										<p>A survival game where you play as Santa Claus, trying to escape from hordes of children who will do anything to get their Christmas presents.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/babbo-furioso"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/babbo-furioso" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic8.PNG" style="height:240px" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/family-roots" class="image featured"><img src="images/pic8.PNG" alt="Family Roots" /></a>
 										<header>
 											<h3>Family Roots</h3>
 										</header>
-										<p>The game involves placing missing figures on a family tree. The player is given cards representing different characters,
-											 each with their own description, to aid in placing the figures.</p>
+										<p>Place missing figures on a family tree. You are given cards representing different characters, each with their own description, to aid in placing the figures.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/family-roots"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/family-roots" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic9.png" style="height:240px" alt="" /></a>
+										<a href="https://batraf.itch.io/cards-weaver" class="image featured"><img src="images/pic9.png" alt="Cards Weaver" /></a>
 										<header>
 											<h3>Cards Weaver</h3>
 										</header>
-										<p>Cards Weaver is a Deck-Building Rogue-Like game, where you battle foes with a deck composed by cards obtained during a single playthrough.</p>
+										<p>A Deck-Building Rogue-Like game where you battle foes with a deck composed of cards obtained during a single playthrough.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://batraf.itch.io/cards-weaver"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://batraf.itch.io/cards-weaver" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic03.jpg"
-												style="height:256px" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/cube-cat-adventure" class="image featured"><img src="images/pic03.jpg" alt="Cube Cat Adventure" /></a>
 										<header>
 											<h3>Cube Cat Adventure</h3>
 										</header>
-										<p>A 3D platformer.One day this cat mysteriously found himself on an island, and
-											this is where his fantastic adventure began, will the cat manage to return
-											home?</p>
+										<p>A 3D platformer. One day this cat mysteriously found himself on an island — this is where his fantastic adventure began. Will the cat manage to return home?</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/cube-cat-adventure"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/cube-cat-adventure" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/chubby-runners" class="image featured"><img src="images/pic04.jpg" alt="Chubby Runners" /></a>
 										<header>
 											<h3>Chubby Runners</h3>
 										</header>
-										<p>The game is a Side Scrolling Endless Runner, the goal is to advance through
-											the different scenarios while staying alive as long as possible.</p>
+										<p>A Side Scrolling Endless Runner — advance through different scenarios while staying alive as long as possible.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/chubby-runners"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/chubby-runners" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/anoffice" class="image featured"><img src="images/pic05.jpg" alt="An Office" /></a>
 										<header>
 											<h3>An Office</h3>
 										</header>
-										<p> Is an isometric arcade survival platform in Voxel style that represents the
-											usual working day of an average (and stressed) worker The game structure is
-											based on a day & night cycle.</p>
+										<p>An isometric arcade survival platformer in Voxel style representing the usual working day of an average stressed worker. Built around a day & night cycle.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/anoffice"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/anoffice" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/space-lasers" class="image featured"><img src="images/pic06.jpg" alt="Space Lasers" /></a>
 										<header>
 											<h3>Space Lasers</h3>
 										</header>
-										<p>The game is a shoot 'em up, inspired by the classics of the genre, the
-											objective is to get to the end of the game by trying to defeat as many
-											enemies as possible and thus obtain the best score. </p>
+										<p>A shoot ‘em up inspired by the classics of the genre. Defeat as many enemies as possible to get to the end of the game and achieve the best score.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/space-lasers"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/space-lasers" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
 								</div>
-								<div class="col-4 col-6-medium col-12-small">
+								<div class="col-4 col-6-medium col-12-small reveal">
 									<section class="box game-card">
-										<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="https://ecchi-sensei.itch.io/crystal-cavern" class="image featured"><img src="images/pic07.jpg" alt="Crystal Cavern" /></a>
 										<header>
 											<h3>Crystal Cavern</h3>
 										</header>
-										<p>This is the first prototype game I made on Unreal, the objective of the game
-											is to collect all the gems in the crystal cavern in order to advance to the
-											next levels.</p>
+										<p>My first Unreal Engine prototype. Collect all the gems in the crystal cavern to advance through the next levels.</p>
 										<footer>
 											<ul class="actions">
-												<li><a href="https://ecchi-sensei.itch.io/crystal-cavern"
-														class="button alt">Find out more</a></li>
+												<li><a href="https://ecchi-sensei.itch.io/crystal-cavern" class="button alt">Find out more</a></li>
 											</ul>
 										</footer>
 									</section>
@@ -395,6 +377,52 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<script>
+		// Scroll-reveal via IntersectionObserver
+		(function() {
+			var observer = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+						observer.unobserve(entry.target);
+					}
+				});
+			}, { threshold: 0.12 });
+
+			document.querySelectorAll('.reveal').forEach(function(el) {
+				observer.observe(el);
+			});
+		})();
+
+		// Typing effect for banner subtitle
+		(function() {
+			var texts = ['Game Designer', 'Game Developer', 'Technical Game Designer'];
+			var el = document.getElementById('typing-text');
+			if (!el) return;
+			var tIdx = 0, cIdx = 0, deleting = false;
+
+			function tick() {
+				var current = texts[tIdx];
+				if (!deleting) {
+					el.textContent = current.slice(0, ++cIdx);
+					if (cIdx === current.length) {
+						deleting = true;
+						setTimeout(tick, 1800);
+						return;
+					}
+				} else {
+					el.textContent = current.slice(0, --cIdx);
+					if (cIdx === 0) {
+						deleting = false;
+						tIdx = (tIdx + 1) % texts.length;
+					}
+				}
+				setTimeout(tick, deleting ? 55 : 90);
+			}
+			setTimeout(tick, 600);
+		})();
+	</script>
 
 </body>
 

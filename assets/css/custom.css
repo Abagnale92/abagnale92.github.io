@@ -1,0 +1,362 @@
+/* ===========================
+   CUSTOM ENHANCEMENTS
+   =========================== */
+
+/* ---- Smooth scroll ---- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---- Sticky Nav with glass effect ---- */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.2em 0 !important;
+    transition: box-shadow 0.3s ease;
+}
+
+#header h1 {
+    font-size: 1.6em !important;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+#header h1 a {
+    color: #d52349 !important;
+}
+
+/* ---- Banner improvements ---- */
+#banner {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    padding: 10em 0 !important;
+    position: relative;
+}
+
+#banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(213, 35, 73, 0.15) 0%, rgba(37, 33, 34, 0.4) 100%);
+    pointer-events: none;
+}
+
+#banner header {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(34, 30, 31, 0.92) !important;
+    border: 1px solid rgba(213, 35, 73, 0.4);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+    padding: 2.8em 5.5em !important;
+    transition: transform 0.3s ease;
+}
+
+#banner header:hover {
+    transform: translateY(-2px);
+}
+
+#banner header h2 {
+    font-size: 2.8em !important;
+    letter-spacing: 0.02em;
+}
+
+#banner header p {
+    font-size: 1.3em !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: #d52349;
+    margin-left: 2px;
+    vertical-align: middle;
+    animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
+/* ---- About section ---- */
+#intro {
+    background: #fff;
+    padding: 3em 0 2em !important;
+}
+
+#intro .major h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#intro .major h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d52349;
+    margin: 0.4em auto 0;
+    border-radius: 2px;
+}
+
+#intro .major p {
+    font-size: 1em;
+    line-height: 1.9;
+    color: #5d5d5d;
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* ---- Skills grid ---- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1.5em;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 1.2em;
+    border-radius: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    min-width: 100px;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(213, 35, 73, 0.12);
+    border-color: rgba(213, 35, 73, 0.3);
+}
+
+.skill-item span {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ---- Section heading accent ---- */
+.major h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#main .major h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #d52349;
+    margin: 0.35em 0 0;
+    border-radius: 2px;
+}
+
+/* ---- Game card fix: uniform height with flex ---- */
+.col-4.col-6-medium.col-12-small {
+    display: flex;
+}
+
+.game-card {
+    display: flex !important;
+    flex-direction: column;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 480px;
+    margin: 0 0 2em 0 !important;
+    padding: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    border-bottom: 2px solid #ccc !important;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+    border-bottom-color: #d52349 !important;
+}
+
+/* Image container: fixed height with cover */
+.game-card .image.featured {
+    position: static !important;
+    width: 100% !important;
+    height: 200px;
+    left: auto !important;
+    top: auto !important;
+    margin: 0 !important;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.game-card .image.featured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+    /* override any inline style heights */
+    height: 100% !important;
+}
+
+.game-card:hover .image.featured img {
+    transform: scale(1.06);
+}
+
+/* Card body: padding + flex grow */
+.game-card > header,
+.game-card > p {
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+}
+
+.game-card > header {
+    padding-top: 1.2em;
+    padding-bottom: 0.4em;
+}
+
+.game-card > header h3 {
+    font-size: 1.1em;
+    line-height: 1.3;
+    color: #252122;
+    margin: 0;
+}
+
+.game-card > p {
+    flex-grow: 1;
+    font-size: 0.88em;
+    line-height: 1.65;
+    color: #6a6a6a;
+    padding-top: 0.3em;
+    padding-bottom: 0;
+    margin: 0;
+    /* clamp text to 4 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.game-card > footer {
+    padding: 1em 1.6em 1.4em;
+    margin: auto 0 0 !important;
+}
+
+.game-card > footer ul.actions {
+    margin: 0;
+}
+
+.game-card > footer ul.actions li a.button {
+    font-size: 0.9em;
+    padding: 0.55em 1.3em;
+    letter-spacing: 0.02em;
+}
+
+/* ---- Other Projects cards ---- */
+#main .box:not(.game-card) {
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#main .box:not(.game-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+}
+
+/* ---- Scroll-reveal animations ---- */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delay for cards in same row */
+.reveal:nth-child(2) { transition-delay: 0.1s; }
+.reveal:nth-child(3) { transition-delay: 0.2s; }
+.reveal:nth-child(4) { transition-delay: 0.05s; }
+.reveal:nth-child(5) { transition-delay: 0.15s; }
+.reveal:nth-child(6) { transition-delay: 0.25s; }
+
+/* ---- Footer improvements ---- */
+#footer {
+    background: #1e1b1c;
+}
+
+#footer::before {
+    opacity: 0.2 !important;
+}
+
+#footer .social li a {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+#footer .social li a:hover {
+    color: #d52349 !important;
+    transform: translateY(-3px);
+}
+
+/* ---- Button alt override ---- */
+.button.alt {
+    background: transparent !important;
+    border: 2px solid #d52349 !important;
+    color: #d52349 !important;
+    transition: background-color 0.25s ease, color 0.25s ease !important;
+}
+
+.button.alt:hover {
+    background: #d52349 !important;
+    color: #fff !important;
+}
+
+/* ---- Responsive tweaks ---- */
+@media screen and (max-width: 980px) {
+    #banner {
+        background-attachment: scroll !important;
+    }
+
+    #header {
+        position: relative;
+    }
+
+    .game-card {
+        min-height: 440px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .game-card {
+        min-height: auto;
+    }
+
+    .game-card > p {
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+}
