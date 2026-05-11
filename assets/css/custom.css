@@ -7,11 +7,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ---- Nav improvements (no sticky — #header wraps the whole intro block) ---- */
+/* ---- Sticky Nav ---- */
 #header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.97) !important;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-    padding: 1.2em 0 !important;
+    padding: 0.9em 0 !important;
+    transition: box-shadow 0.3s ease;
+    border-bottom: solid 1px #ddd;
 }
 
 #header h1 {
@@ -81,10 +88,16 @@ html {
     50%       { opacity: 0; }
 }
 
-/* ---- About section ---- */
+/* ---- About / Intro section ---- */
 #intro {
     background: #fff;
-    padding: 3em 0 2em !important;
+    padding: 3em 0 3em !important;
+    text-align: left !important;
+}
+
+#intro .major {
+    text-align: center;
+    margin-bottom: 2em;
 }
 
 #intro .major h2 {
@@ -102,13 +115,146 @@ html {
     border-radius: 2px;
 }
 
-#intro .major p {
-    font-size: 1em;
-    line-height: 1.9;
+/* Two-column about layout */
+.about-layout {
+    display: flex;
+    gap: 3em;
+    align-items: flex-start;
+    margin-bottom: 3em;
+}
+
+.about-text {
+    flex: 1 1 55%;
+}
+
+.about-text p {
+    font-size: 0.95em;
+    line-height: 1.85;
     color: #5d5d5d;
-    max-width: 860px;
-    margin: 0 auto;
-    text-align: left;
+    margin-bottom: 1em;
+}
+
+.about-carousel {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+/* Skills section heading */
+.skills-section {
+    text-align: center;
+}
+
+.skills-section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.2em;
+}
+
+.skills-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #d52349;
+    margin: 0.4em auto 0;
+    border-radius: 2px;
+}
+
+/* ---- Photo Carousel ---- */
+.carousel {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+    background: #111;
+    aspect-ratio: 4 / 3;
+}
+
+.carousel-track {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(34, 30, 31, 0.65);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background: #d52349;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 7px;
+}
+
+.carousel-dots .dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-dots .dot.active {
+    background: #d52349;
+    transform: scale(1.25);
+}
+
+/* Responsive about layout */
+@media screen and (max-width: 980px) {
+    .about-layout {
+        flex-direction: column;
+    }
+    .about-carousel {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
 }
 
 /* ---- Skills grid ---- */
