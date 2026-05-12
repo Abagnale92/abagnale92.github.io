@@ -17,7 +17,7 @@
 <body class="homepage is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
+		<!-- Header (solo logo + nav — sticky) -->
 		<section id="header">
 
 			<!-- Logo -->
@@ -33,63 +33,122 @@
 				</ul>
 			</nav>
 
-			<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Giuseppe Abagnale</h2>
-					<p><span id="typing-text"></span><span class="typing-cursor"></span></p>
-				</header>
-			</section>
+		</section>
 
-			<!-- Intro -->
-			<section id="intro" class="container" style="padding-top: 20px;">
-				<header class="major">
-					<h2>About Me</h2>
-					<p>I hold a master’s degree in game development, a master’s degree in computer science with a specialization in project management, and I have completed UI/UX and Game Design courses for video games at Digital Bros Academy.
-					I also regularly take part in Game Jams, both for video games and board games.Thanks to my hybrid profile, I am able to follow a variety of professional activities and easily integrate into different creative and technical contexts.Currently, I work as a Technical Game Designer at SPICI in Naples, where I focus on advergames, gamification applications, and act as a consultant for the design of new ideas in the creative industry.
-					The world of video games has always fascinated me, and over time I’ve developed a solid foundation in both game design and development. My goal is to gain a comprehensive understanding of the entire game development process—from both the design and technical sides-while leveraging my background in management to contribute across multiple areas, including QA and game production.
-					</p>
+		<!-- Banner -->
+		<section id="banner">
+			<header>
+				<h2>Giuseppe Abagnale</h2>
+				<p><span id="typing-text"></span><span class="typing-cursor"></span></p>
+			</header>
+		</section>
 
-				</header>
-				<footer>
-					<h2>Skills</h2>
-					<div class="skills-grid">
-						<div class="skill-item reveal">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" alt="Unity" width="80" height="80">
-							<span>Unity</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" alt="Unreal Engine" width="80" height="80">
-							<span>Unreal</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="64" height="64">
-							<span>C#</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="64" height="64">
-							<span>C++</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="images/IconGit.png" alt="Git" width="64" height="64">
-							<span>Git</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="images/IconPS.png" alt="Photoshop" width="64" height="64">
-							<span>Photoshop</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="images/IconFigma.png" alt="Figma" width="64" height="64">
-							<span>Figma</span>
-						</div>
-						<div class="skill-item reveal">
-							<img src="images/iconVS.png" alt="Visual Studio" width="64" height="64">
-							<span>Visual Studio</span>
-						</div>
+		<!-- Intro / About Me -->
+		<section id="intro" class="container">
+			<header class="major">
+				<h2>About Me</h2>
+			</header>
+
+			<!-- Bio text -->
+			<div class="about-text">
+				<p>I hold a master’s degree in game development, a master’s degree in computer science with a specialization in project management, and I have completed UI/UX and Game Design courses for video games at Digital Bros Academy.</p>
+				<p>I also regularly take part in Game Jams, both for video games and board games. Thanks to my hybrid profile, I am able to follow a variety of professional activities and easily integrate into different creative and technical contexts.</p>
+				<p>Currently, I work as a Technical Game Designer at SPICI in Naples, where I focus on advergames, gamification applications, and act as a consultant for the design of new ideas in the creative industry.</p>
+				<p>My goal is to gain a comprehensive understanding of the entire game development process — from both the design and technical sides — while leveraging my background in management to contribute across multiple areas, including QA and game production.</p>
+			</div>
+
+			<!-- Full-width carousel below the bio -->
+			<div class="carousel" id="photoCarousel">
+				<div class="carousel-track">
+					<div class="carousel-slide active">
+						<img src="images/photo/foto1.jfif" alt="Photo 1" />
 					</div>
-				</footer>
-			</section>
+					<div class="carousel-slide">
+						<img src="images/photo/foto2.jfif" alt="Photo 2" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto3.jfif" alt="Photo 3" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto4.jfif" alt="Photo 4" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto5.jfif" alt="Photo 5" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto6.jfif" alt="Photo 6" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto7.jfif" alt="Photo 7" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto8.jfif" alt="Photo 8" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto9.jfif" alt="Photo 9" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto10.JPG" alt="Photo 10" />
+					</div>
+					<div class="carousel-slide">
+						<img src="images/photo/foto11.JPG" alt="Photo 11" />
+					</div>
+				</div>
+				<button class="carousel-btn prev" aria-label="Previous">&#8249;</button>
+				<button class="carousel-btn next" aria-label="Next">&#8250;</button>
+				<div class="carousel-dots">
+					<span class="dot active" data-idx="0"></span>
+					<span class="dot" data-idx="1"></span>
+					<span class="dot" data-idx="2"></span>
+					<span class="dot" data-idx="3"></span>
+					<span class="dot" data-idx="4"></span>
+					<span class="dot" data-idx="5"></span>
+					<span class="dot" data-idx="6"></span>
+					<span class="dot" data-idx="7"></span>
+					<span class="dot" data-idx="8"></span>
+					<span class="dot" data-idx="9"></span>
+					<span class="dot" data-idx="10"></span>
+				</div>
+			</div>
 
+			<!-- Skills -->
+			<div class="skills-section">
+				<h2>Skills</h2>
+				<div class="skills-grid">
+					<div class="skill-item reveal">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" alt="Unity" width="80" height="80">
+						<span>Unity</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg" alt="Unreal Engine" width="80" height="80">
+						<span>Unreal</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="64" height="64">
+						<span>C#</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="64" height="64">
+						<span>C++</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="images/IconGit.png" alt="Git" width="64" height="64">
+						<span>Git</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="images/IconPS.png" alt="Photoshop" width="64" height="64">
+						<span>Photoshop</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="images/IconFigma.png" alt="Figma" width="64" height="64">
+						<span>Figma</span>
+					</div>
+					<div class="skill-item reveal">
+						<img src="images/iconVS.png" alt="Visual Studio" width="64" height="64">
+						<span>Visual Studio</span>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Main -->
@@ -393,6 +452,34 @@
 			document.querySelectorAll('.reveal').forEach(function(el) {
 				observer.observe(el);
 			});
+		})();
+
+		// Photo Carousel
+		(function() {
+			var carousel = document.getElementById('photoCarousel');
+			if (!carousel) return;
+			var slides = carousel.querySelectorAll('.carousel-slide');
+			var dots   = carousel.querySelectorAll('.dot');
+			var current = 0, timer;
+
+			function goTo(idx) {
+				slides[current].classList.remove('active');
+				dots[current].classList.remove('active');
+				current = (idx + slides.length) % slides.length;
+				slides[current].classList.add('active');
+				dots[current].classList.add('active');
+			}
+
+			function startAuto() { timer = setInterval(function(){ goTo(current + 1); }, 3500); }
+			function stopAuto()  { clearInterval(timer); }
+
+			carousel.querySelector('.prev').addEventListener('click', function(){ stopAuto(); goTo(current - 1); startAuto(); });
+			carousel.querySelector('.next').addEventListener('click', function(){ stopAuto(); goTo(current + 1); startAuto(); });
+			dots.forEach(function(dot) {
+				dot.addEventListener('click', function(){ stopAuto(); goTo(+this.dataset.idx); startAuto(); });
+			});
+
+			startAuto();
 		})();
 
 		// Typing effect for banner subtitle
