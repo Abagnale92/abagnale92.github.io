@@ -150,6 +150,95 @@ html {
     border-radius: 2px;
 }
 
+/* ---- Section Tabs (My Games / Projects) ---- */
+.section-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2.5em;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    color: #888;
+    font-size: 1.05em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.7em 2em;
+    cursor: pointer;
+    border-radius: 0;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: #d52349;
+    background: transparent;
+}
+
+.tab-btn.active {
+    color: #d52349;
+    border-bottom-color: #d52349;
+    background: transparent;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* ---- Project card thumbnail ---- */
+.project-thumb {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    gap: 5px;
+    padding: 12px 14px 12px;
+    transition: filter 0.3s ease;
+}
+
+.game-card:hover .project-thumb {
+    filter: brightness(1.1);
+}
+
+.proj-tag {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    font-size: 0.68em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.proj-status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.proj-status.done  { background: rgba(39,174,96,0.9);  color: #fff; }
+.proj-status.wip   { background: rgba(243,156,18,0.9); color: #fff; }
+.proj-status.proto { background: rgba(52,152,219,0.9); color: #fff; }
+
 /* ---- Auto-scrolling photo gallery ---- */
 .photo-gallery {
     /* break out of any parent container to be truly full-width */
