@@ -159,11 +159,11 @@ html {
 }
 
 .tab-btn {
-    background: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 3px solid transparent !important;
     margin-bottom: -2px;
-    color: #252122;
+    color: #252122 !important;
     font-size: 1.05em;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -175,14 +175,14 @@ html {
 }
 
 .tab-btn:hover {
-    color: #d52349;
-    background: transparent;
+    color: #d52349 !important;
+    background: transparent !important;
 }
 
 .tab-btn.active {
-    color: #d52349;
-    border-bottom-color: #d52349;
-    background: transparent;
+    color: #d52349 !important;
+    border-bottom-color: #d52349 !important;
+    background: transparent !important;
 }
 
 .tab-panel {
