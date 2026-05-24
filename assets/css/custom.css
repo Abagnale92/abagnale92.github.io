@@ -524,6 +524,17 @@ html {
     color: #fff !important;
 }
 
+/* ---- Project cards: full text, no footer ---- */
+#tab-projects .game-card > p {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    display: block;
+}
+
+#tab-projects .game-card {
+    min-height: unset;
+}
+
 /* ---- Responsive tweaks ---- */
 @media screen and (max-width: 980px) {
     #banner {
