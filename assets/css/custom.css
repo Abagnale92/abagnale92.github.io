@@ -205,6 +205,22 @@ html {
     gap: 5px;
     padding: 12px 14px 12px;
     transition: filter 0.3s ease;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.project-thumb::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 65%);
+    pointer-events: none;
+    border-radius: 0;
+}
+
+.project-thumb .proj-tag {
+    position: relative;
+    z-index: 1;
 }
 
 .game-card:hover .project-thumb {
