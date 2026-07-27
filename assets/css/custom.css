@@ -150,9 +150,10 @@ html {
     border-radius: 2px;
 }
 
-/* ---- Section Tabs (My Games / Projects) ---- */
+/* ---- Section Tabs (Projects filters) ---- */
 .section-tabs {
     display: flex;
+    flex-wrap: wrap;
     gap: 0;
     margin-bottom: 2.5em;
     border-bottom: 2px solid #e0e0e0;
@@ -185,12 +186,11 @@ html {
     background: transparent !important;
 }
 
-.tab-panel {
-    display: none;
-}
-
-.tab-panel.active {
-    display: block;
+.filter-empty {
+    text-align: center;
+    padding: 3em 0;
+    color: #999;
+    font-size: 1.1em;
 }
 
 /* ---- Project card thumbnail ---- */
@@ -541,13 +541,13 @@ html {
 }
 
 /* ---- Project cards: full text, no footer ---- */
-#tab-projects .game-card > p {
+[data-category="work"] .game-card > p {
     -webkit-line-clamp: unset;
     overflow: visible;
     display: block;
 }
 
-#tab-projects .game-card {
+[data-category="work"] .game-card {
     min-height: unset;
 }
 
