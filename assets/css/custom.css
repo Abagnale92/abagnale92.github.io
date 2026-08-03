@@ -477,6 +477,15 @@ html {
     letter-spacing: 0.02em;
 }
 
+/* ---- Platform cards (clickable link wrapper) ---- */
+.platform-card-link {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 /* ---- Other Projects cards ---- */
 #main .box:not(.game-card) {
     border-radius: 8px;
